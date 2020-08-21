@@ -1,0 +1,22 @@
+/* Since we will be using ES6+ and the latest JS features in the backend code, we will install and configure Babel modules 
+to convert ES6+ into older versions of JS so that it's compatible with the Node version being used.
+We'll configure Babel in the .babelrc file with presets for the latest JS features and specify the current version of Node as the target environment.
+
+We need to install the Babel modules as devDependencies from the command line: yarn add --dev @babel/core babel-loader @babel/preset-env
+*/
+
+{
+    "presets": [
+      ["@babel/preset-env",
+        {
+          "targets": {        // Setting targets.node to current instructs Babel to compile against the current version of Node and allows us 
+            "node": "current" // to use expressions such as async/await in our backend code.
+          }
+        }
+      ],
+      "@babel/preset-react" // To compile React, first, install the Babel React preset module as a development dependency yarn add --dev @babel/preset-react
+    ],
+    "plugins": [
+      "react-hot-loader/babel" // configure the react-hot-loader Babel plugin as required for the react-hotloader module
+    ]
+}
