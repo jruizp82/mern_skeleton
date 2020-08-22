@@ -22,7 +22,8 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "SET NODE_ENV=production node ./dist/server.generated.js"    
+    "start": "SET NODE_ENV=production node ./dist/server.generated.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "engines": {
     "node": "14.6.0",
