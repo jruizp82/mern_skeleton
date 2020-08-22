@@ -22,11 +22,12 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "SET NODE_ENV=production node ./dist/server.generated.js"    
+    "start": "SET NODE_ENV=production heroku node ./dist/server.generated.js"    
   },
   "engines": {
     "node": "14.6.0",
-    "npm": "6.14.4"
+    "npm": "6.14.4",
+    "yarn": "1.x"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^16.13.0",
