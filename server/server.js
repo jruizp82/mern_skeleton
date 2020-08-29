@@ -8,7 +8,8 @@ mongoose.Promise = global.Promise // onfigure it so that it uses native ES6 prom
 // use it to handle the connection to the MongoDB database for the proyect
 mongoose.connect(config.mongoUri, { useNewUrlParser: true,
                                     useCreateIndex: true,
-                                    useUnifiedTopology: true } )
+                                    useUnifiedTopology: true,
+                                    useFindAndModify: false })
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${config.mongoUri}`)
 })

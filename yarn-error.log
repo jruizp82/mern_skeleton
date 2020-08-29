@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js development
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\RUIZ\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\app\RUIZ\product\18.0.0\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python36\Scripts;C:\Python36;C:\Program Files\Microsoft MPI\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\DTS\Binn;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files (x86)\Calibre2;C:\WINDOWS\System32\OpenSSH;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files (x86)\Graphviz2.38\bin;C:\Users\RUIZ\Notebooks\Examples\Natural Language Processing\stanford-parser-full-2018-02-27;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\11\bin;C:\Program Files\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Users\RUIZ\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\RUIZ\AppData\Local\Programs\Python\Python38;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\RUIZ\Anaconda3;C:\Users\RUIZ\Anaconda3\Library\mingw-w64\bin;C:\Users\RUIZ\Anaconda3\Library\usr\bin;C:\Users\RUIZ\Anaconda3\Library\bin;C:\Users\RUIZ\Anaconda3\Scripts;C:\Program Files\Microsoft VS Code\bin;C:\Users\RUIZ\.dotnet\tools;C:\Program Files\heroku\bin;C:\Program Files\PostgreSQL\11\bin;C:\Users\RUIZ\AppData\Local\Microsoft\WindowsApps;C:\Users\RUIZ\Desktop\lynx_w32;C:\Users\RUIZ\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\RUIZ\AppData\Local\Yarn\bin
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\RUIZ\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\app\RUIZ\product\18.0.0\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python36\Scripts;C:\Python36;C:\Program Files\Microsoft MPI\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\DTS\Binn;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files (x86)\Calibre2;C:\WINDOWS\System32\OpenSSH;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files (x86)\Graphviz2.38\bin;C:\Users\RUIZ\Notebooks\Examples\Natural Language Processing\stanford-parser-full-2018-02-27;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\11\bin;C:\Program Files\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Users\RUIZ\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\RUIZ\AppData\Local\Programs\Python\Python38;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\RUIZ\Anaconda3;C:\Users\RUIZ\Anaconda3\Library\mingw-w64\bin;C:\Users\RUIZ\Anaconda3\Library\usr\bin;C:\Users\RUIZ\Anaconda3\Library\bin;C:\Users\RUIZ\Anaconda3\Scripts;C:\Program Files\Microsoft VS Code\bin;C:\Users\RUIZ\.dotnet\tools;C:\Program Files\heroku\bin;C:\Program Files\PostgreSQL\11\bin;C:\Users\RUIZ\AppData\Local\Microsoft\WindowsApps;C:\Users\RUIZ\Desktop\lynx_w32;C:\Users\RUIZ\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\RUIZ\AppData\Local\Yarn\bin;C:\Program Files\MongoDB\Tools\100\bin
 
 Yarn version: 
   1.22.4
@@ -14,18 +14,32 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Users\RUIZ\Documents\Informática\CURSOS\Full Stack React Projects\Projects\mern-skeleton\package.json: Unexpected token / in JSON at position 560
-      at JSON.parse (<anonymous>)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137008:13)
+      at Interface.emit (events.js:314:20)
+      at Interface._ttyWrite (readline.js:875:16)
+      at ReadStream.onkeypress (readline.js:213:10)
+      at ReadStream.emit (events.js:314:20)
+      at emitKeys (internal/readline/utils.js:335:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1144:36)
+      at ReadStream.emit (events.js:314:20)
+      at addChunk (_stream_readable.js:303:12)
 
 npm manifest: 
   {
     "name": "mern-skeleton",
     "version": "1.0.0",
-    "main": "index.js",
+    "description": "A MERN stack skeleton web application",
+    "author": "JARuiz",
+    "keywords": [
+      "react",
+      "express",
+      "mongodb",
+      "node",
+      "mern"
+    ],
+    "main": "./dist/server.generated.js",
     "license": "MIT",
     "devDependencies": {
       "@babel/core": "^7.11.0",
@@ -33,7 +47,6 @@ npm manifest:
       "@babel/preset-react": "^7.10.4",
       "babel-loader": "^8.1.0",
       "file-loader": "^6.0.0",
-      "fileloader": "^2.0.0",
       "nodemon": "2.0.2",
       "webpack": "^4.44.1",
       "webpack-cli": "^3.3.12",
@@ -42,10 +55,15 @@ npm manifest:
       "webpack-node-externals": "^2.5.0"
     },
     "scripts": {
-      "development": "nodemon"
-      //"build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-      //"start": "NODE_ENV=production node ./dist/server.generated.js"
-    },  
+      "development": "nodemon",
+      "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+      "start": "node ./dist/server.generated.js"
+    },
+    "engines": {
+      "node": "14.6.0",
+      "npm": "6.14.7",
+      "yarn": "1.x"
+    },
     "dependencies": {
       "@hot-loader/react-dom": "^16.13.0",
       "@material-ui/core": "^4.11.0",
@@ -56,6 +74,7 @@ npm manifest:
       "cors": "^2.8.5",
       "express": "^4.17.1",
       "express-jwt": "^6.0.0",
+      "formidable": "^1.2.2",
       "helmet": "^3.23.3",
       "jsonwebtoken": "^8.5.1",
       "lodash": "^4.17.19",
@@ -2131,7 +2150,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/dasherize/-/dasherize-2.0.0.tgz#6d809c9cd0cf7bb8952d80fc84fa13d47ddb1308"
     integrity sha1-bYCcnNDPe7iVLYD8hPoT1H3bEwg=
   
-  debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.3:
+  debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
     version "2.6.9"
     resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
     integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -2567,15 +2586,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
     integrity sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
   
-  fileloader@^2.0.0:
-    version "2.0.0"
-    resolved "https://registry.yarnpkg.com/fileloader/-/fileloader-2.0.0.tgz#4f1a1fba675650a7c59e15e1c52c136aaee0f63e"
-    integrity sha1-TxofumdWUKfFnhXhxSwTaq7g9j4=
-    dependencies:
-      debug "^2.6.3"
-      iconv-lite "^0.4.15"
-      wt "^1.1.1"
-  
   fill-range@^4.0.0:
     version "4.0.0"
     resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-4.0.0.tgz#d544811d428f98eb06a63dc402d2403c328c38f7"
@@ -2645,6 +2655,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
     integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
   
+  formidable@^1.2.2:
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.2.tgz#bf69aea2972982675f00865342b982986f6b8dd9"
+    integrity sha512-V8gLm+41I/8kguQ4/o1D3RIHRmhYFG4pnNyonvua+40rqcEmT4+V71yaZ3B457xbbgCsCfjSPi65u/W6vK1U5Q==
+  
   forwarded@~0.1.2:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
@@ -2712,11 +2727,6 @@ Lockfile:
     version "2.0.5"
     resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
     integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
-  
-  get-ready@~1.0.0:
-    version "1.0.0"
-    resolved "https://registry.yarnpkg.com/get-ready/-/get-ready-1.0.0.tgz#f91817f1e9adecfea13a562adfc8de883ab34782"
-    integrity sha1-+RgX8emt7P6hOlYq38jeiDqzR4I=
   
   get-stream@^3.0.0:
     version "3.0.0"
@@ -3012,7 +3022,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
     integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
   
-  iconv-lite@0.4.24, iconv-lite@^0.4.15:
+  iconv-lite@0.4.24:
     version "0.4.24"
     resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
     integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
@@ -3893,11 +3903,6 @@ Lockfile:
       snapdragon "^0.8.1"
       to-regex "^3.0.1"
   
-  ndir@^0.1.5:
-    version "0.1.5"
-    resolved "https://registry.yarnpkg.com/ndir/-/ndir-0.1.5.tgz#120891d7697bbbe8214cfeff09602060d3454558"
-    integrity sha1-EgiR12l7u+ghTP7/CWAgYNNFRVg=
-  
   negotiator@0.6.2:
     version "0.6.2"
     resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
@@ -4743,13 +4748,6 @@ Lockfile:
       ajv "^6.12.2"
       ajv-keywords "^3.4.1"
   
-  sdk-base@^2.0.1:
-    version "2.0.1"
-    resolved "https://registry.yarnpkg.com/sdk-base/-/sdk-base-2.0.1.tgz#ba40289e8bdf272ed11dd9ea97eaf98e036d24c6"
-    integrity sha1-ukAonovfJy7RHdnql+r5jgNtJMY=
-    dependencies:
-      get-ready "~1.0.0"
-  
   semver-diff@^2.0.0:
     version "2.1.0"
     resolved "https://registry.yarnpkg.com/semver-diff/-/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
@@ -5562,15 +5560,6 @@ Lockfile:
       graceful-fs "^4.1.11"
       imurmurhash "^0.1.4"
       signal-exit "^3.0.2"
-  
-  wt@^1.1.1:
-    version "1.2.0"
-    resolved "https://registry.yarnpkg.com/wt/-/wt-1.2.0.tgz#b4cbe34c1f50a56a5433a9dda8cbdb7c62e3bcdf"
-    integrity sha512-nJttxFyxnIvWBWYcy7Px4XkXbRoEe77by66d0FDof266Mv00vVBNcUGa00rL1+0DdsXG75LG1rwBnBfUa2bNLA==
-    dependencies:
-      debug "^2.2.0"
-      ndir "^0.1.5"
-      sdk-base "^2.0.1"
   
   x-xss-protection@1.3.0:
     version "1.3.0"

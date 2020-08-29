@@ -27,7 +27,24 @@ const UserSchema = new mongoose.Schema({
     created: {
         type: Date,
         default: Date.now
-    }    
+    },
+    // To store the short description we need to add an about field to the user model
+    about: {
+        type: String,
+        trim: true
+    },
+    // To store the uploaded profile photo directly in the database, we will update the user model to add a photo field that stores the file as data of the Buffer type,
+    // along with the file's contentType. 
+    // An image file that's uploaded by the user from the client- side will be converted into binary data and stored in this photo field for documents in the Users collection in MongoDB.
+    photo: {
+        data: Buffer,
+        contentType: String
+    },
+    /* To store the list of following and followers in the database, we will need to update the user model with two arrays of user references.
+    These references will point to the users in the collection being followed by or following the given user.
+    */
+    following: [{type: mongoose.Schema.ObjectId, ref: 'User'}],
+    followers: [{type: mongoose.Schema.ObjectId, ref: 'User'}]    
 })
 
 /* The password string that's provided by the user is not stored directly in the user document. Instead, it is handled as a virtual field

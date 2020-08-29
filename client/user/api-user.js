@@ -76,10 +76,12 @@ const update = async (params, credentials, user) => {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json',
+                // Since the content type of the data that's sent to the server is no longer 'application/json', we also need to remove Content-Type from the headers in the fetch call
+                //'Content-Type': 'application/json', 
                 'Authorization': 'Bearer ' + credentials.t
             },
-            body: JSON.stringify(user)
+            //body: JSON.stringify(user)
+            body: user
         })
         return await response.json()
     } catch(err) {
@@ -108,5 +110,61 @@ const remove = async (params, credentials) => {
     }
 }
 
+/* To access these API calls in the views, we will update with the follow and unfollow fetch methods. The follow and unfollow methods will be similar, 
+making calls to the respective routes with the current user's ID and credentials, and the followed or unfollowed user's ID.
+*/
+const follow = async (params, credentials, followId) => {
+    try {
+        let response = await fetch('/api/users/follow/', {
+            method: 'PUT',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + credentials.t
+            },
+            body: JSON.stringify({userId:params.userId, followId: followId})
+        })
+        return await response.json()
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+// The unfollow fetch method is similar; it takes the unfollowed user's ID and calls the unfollow API
+const unfollow = async (params, credentials, unfollowId) => {
+    try {
+        let response = await fetch('/api/users/unfollow/', {
+            method: 'PUT',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + credentials.t
+            },
+            body: JSON.stringify({userId:params.userId, unfollowId: unfollowId})
+        })
+        return await response.json()
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+// To use the list of users not followed in the frontend, we add a fetch for this API. We can use this findPeople fetch method in the component that will display this list of users. (FindPeople.js)
+const findPeople = async (params, credentials, signal) => {
+    try {
+        let response = await fetch('/api/users/findpeople/' + params.userId, {
+            method: 'GET',
+            signal: signal,
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + credentials.t
+            }
+        })    
+        return await response.json()
+    } catch(err) {
+        console.log(err)
+    }
+}
+
 // These user CRUD methods can now be imported and used by the React components as required.
-export { create, list, read, update, remove }
+export { create, list, read, update, remove, follow, unfollow, findPeople }

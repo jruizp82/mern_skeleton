@@ -15,7 +15,8 @@ import {Link, withRouter} from 'react-router-dom'
 // To indicate the current location of the application on the Menu, we will highlight the link that matches the current location path by changing the color conditionally.
 const isActive = (history, path) => {
     if (history.location.pathname == path)
-        return {color: '#ff4081'}
+        //return {color: '#ff4081'}
+        return {color: '#ffa726'}
     else
         return {color: '#ffffff'}
 }
@@ -38,9 +39,9 @@ const Menu = withRouter(({history}) => (
                     <HomeIcon/>
                 </IconButton>
             </Link>
-            <Link to="/users">
+            {/* <Link to="/users">
                 <Button style={isActive(history, "/users")}>Users</Button>
-            </Link>
+            </Link> */}
             {
                 /* The links to SIGN UP and SIGN IN should only appear on the menu when the user is not signed in. Therefore, we need to add it to the Menu component
                 after the Users button with a condition.

@@ -17,6 +17,7 @@ import helmet from 'helmet' // Collection of middleware functions to help secure
 import Template from './../template'
 import userRoutes from './routes/user.routes'
 import authRoutes from './routes/auth.routes'
+import postRoutes from './routes/post.routes'
 
 // modules for server side rendering. The following modules are required to render the Reactcomponents and use renderToString
 import React from 'react'
@@ -60,6 +61,7 @@ app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
 // mount routes
 app.use('/', userRoutes)
 app.use('/', authRoutes)
+app.use('/', postRoutes)
 
 /* Update the express.js file to import this template and send it in the response to a GET request for the '/' route.
 
