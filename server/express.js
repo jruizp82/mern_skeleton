@@ -32,13 +32,13 @@ import { ServerStyleSheets, ThemeProvider } from '@material-ui/styles'
 import theme from './../client/theme'
 
 //comment out before building for production
-import devBundle from './devBundle' // only development
+//import devBundle from './devBundle' // only development
 
 const CURRENT_WORKING_DIR = process.cwd()
 const app = express() 
 
 //comment out before building for production
-devBundle.compile(app) // only development
+//devBundle.compile(app) // only development
 
 /*... configure express ... */
 // parse body params and attache them to req.body
