@@ -68,7 +68,7 @@ We already imported this Home component in a route in the MainRouter component.
 We will define all our React components as functional components. We will utilize React Hooks, which is a new addition to React, to add state and life cycle features, 
 instead of using class definitions to achieve the same.
 */
-export default function Home(history){
+export default function Home({history}){
     const classes = useStyles()
     const [defaultPage, setDefaultPage] = useState(false)
 
