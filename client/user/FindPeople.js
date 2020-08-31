@@ -78,7 +78,7 @@ export default function FindPeople() {
             userId: jwt.user._id
         }, {
                 t: jwt.token
-            },  user._id).then((data) => {
+            }, user._id).then((data) => {
                     if (data.error) {
                         console.log(data.error)
                     } else {
@@ -120,7 +120,8 @@ export default function FindPeople() {
                             </ListItemSecondaryAction>
                         </ListItem>
                     </span>
-                })}
+                    })
+                }
             </List>
         </Paper>
         {/* We will also add a Material-UI Snackbar component that will open temporarily when the user is successfully followed in order to tell the user that they started

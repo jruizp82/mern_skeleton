@@ -1,7 +1,7 @@
 /* The MainRouter.js code will help render our custom React components with respect to the routes or locations in the application.
 */
 
-import React, {Component} from 'react'
+import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Home from './core/Home'
 import Users from './user/Users'
